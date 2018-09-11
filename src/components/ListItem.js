@@ -12,7 +12,7 @@ class ListItem extends Component {
     const { name } = this.props.employee;
 
     return (
-      <TouchableWithoutFeedback onPress={this.onItemPress()}>
+      <TouchableWithoutFeedback onPress={() => this.onItemPress()}>
         <View>
           <CardSection>
             <Text style={styles.titleStyle}>
